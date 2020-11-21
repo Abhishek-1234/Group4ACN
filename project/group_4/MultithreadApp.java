@@ -193,7 +193,7 @@ class MultithreadReceive{
 				 while(true){
 					sock = server.accept(); 
 					if(sock.getInetAddress().toString().equals(arrOfStr[3])){
-						System.out.println("Right connection ==> " + sock.getInetAddress().toString());
+						//System.out.println("Right connection ==> " + sock.getInetAddress().toString());
 						break;
 					}else{
 						System.out.println("Wrong connection was setup from " + sock.getInetAddress().toString() +", which is now being terminated");
